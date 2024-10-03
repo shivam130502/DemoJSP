@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import = "java.util.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,6 +7,14 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        
+        <%!
+            int i = 10;
+        %>
+        
+        <%
+            out.println("Hello World");
+        %>
+        
     </body>
 </html>
