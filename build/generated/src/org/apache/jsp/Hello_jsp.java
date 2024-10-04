@@ -4,6 +4,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
 
 public final class Hello_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -14,6 +16,11 @@ public final class Hello_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/index.html");
+  }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -46,6 +53,24 @@ public final class Hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    <!DOCTYPE html>\n");
+      out.write("<!--\n");
+      out.write("Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license\n");
+      out.write("Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template\n");
+      out.write("-->\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <title>TODO supply a title</title>\n");
+      out.write("        <meta charset=\"UTF-8\">\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <div>TODO write content</div>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
