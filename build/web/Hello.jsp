@@ -13,6 +13,7 @@
         
         <%!
             int i = 10;
+            boolean isServerRunning = false;
         %>
         
         <%
