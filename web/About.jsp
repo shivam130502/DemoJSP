@@ -12,6 +12,12 @@
         <title>About Us</title>
     </head>
     <body>
+        
+        <%
+            if(session.getAttribute("username") == null)
+                response.sendRedirect("Login.jsp");
+        %>
+        
         This is the about us page
     </body>
 </html>
