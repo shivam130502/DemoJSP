@@ -7,6 +7,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <form action="Welcome" method="get">
+            Enter username: <input type="text" name="username"><br>
+            Enter password: <input type="password" name="password"><br>
+            <input type="submit" value="Enter">
+        </form>
     </body>
 </html>
