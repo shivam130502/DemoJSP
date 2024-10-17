@@ -24,7 +24,6 @@ public class Welcome extends HttpServlet {
             session.setAttribute("username", username);
             response.sendRedirect("About.jsp");
         } else response.sendRedirect("Login.jsp");
-        
     }
 
 }

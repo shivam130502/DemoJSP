@@ -14,10 +14,22 @@
     <body>
         
         <%
-            if(session.getAttribute("username") == null)
-                response.sendRedirect("Login.jsp");
+
+           response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+
         %>
         
-        This is the about us page
+        <%  
+            String username = null;
+            if(session.getAttribute("username") == null)
+                response.sendRedirect("Login.jsp");
+            username = (String) session.getAttribute("username");
+        %>
+        
+        Hi ${username}, This is the about us page
+        
+        <form action="Logout" method="get">
+            <input type="submit" value="Logout">
+        </form>
     </body>
 </html>
