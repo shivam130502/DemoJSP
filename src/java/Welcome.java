@@ -13,8 +13,8 @@ public class Welcome extends HttpServlet {
             throws ServletException, IOException {
         
         String url = "";
-        String username = "";
-        String password = "";
+        String username = "admin";
+        String password = "admin";
         
         Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, username, password);
