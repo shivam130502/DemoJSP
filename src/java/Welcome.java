@@ -15,9 +15,24 @@ public class Welcome extends HttpServlet {
         String url = "";
         String username = "admin";
         String password = "admin";
+        String query = "select rollNumber from student ";
         
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection(url, username, password);
+//        try {
+//            Class.forName("com.mysql.jdbc.Driver");
+//            Connection con = DriverManager.getConnection(url, username, password);
+//            Statement st = con.createStatement();
+//            ResultSet rs = st.executeQuery(query);
+//            
+//            rs.next();
+//            
+//            String name = rs.getString("studentName");
+//            System.out.println(name);
+//            
+//            rs.close();
+//            con.close();
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
         
 //        String username = request.getParameter("username");
 //        String password = request.getParameter("password");
