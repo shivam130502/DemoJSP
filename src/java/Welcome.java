@@ -15,7 +15,7 @@ public class Welcome extends HttpServlet {
         String url = "jdbc:mysql://localhost:3306/jdbc";
         String username = "admin";
         String password = "admin";
-        String query = "select rollNumber from student ";
+        String query = "select * from student ";
         
 //        try {
 //            Class.forName("com.mysql.jdbc.Driver");

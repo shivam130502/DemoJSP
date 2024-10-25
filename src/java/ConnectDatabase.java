@@ -14,11 +14,9 @@ public class ConnectDatabase {
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(query);
         
-        rs.next();
-        rs.next();
-        String name = rs.getString("studentName");
-        
-        System.out.println(name);
+        while(rs.next()){
+            System.out.println(rs.getInt(1) + " : " + rs.getString(2));
+        }
         
     }
     
