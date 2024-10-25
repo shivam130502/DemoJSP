@@ -12,7 +12,7 @@ public class Welcome extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String url = "";
+        String url = "jdbc:mysql://localhost:3306/jdbc";
         String username = "admin";
         String password = "admin";
         String query = "select rollNumber from student ";
