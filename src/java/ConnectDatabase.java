@@ -18,6 +18,8 @@ public class ConnectDatabase {
             System.out.println(rs.getInt(1) + " : " + rs.getString(2));
         }
         
+        System.out.println("Connection Established");
+        
     }
     
 }
