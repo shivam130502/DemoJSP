@@ -7,18 +7,23 @@ public class ConnectDatabase {
         String url = "jdbc:mysql://localhost:3306/jdbc";
         String username = "root";
         String password = "admin";
-        String query = "select * from student";
+        int rollNumber = 7;
+        String studentName = "Zlatan";
+        String query = "insert into student values (?, ?)";
+      //System.out.println(query);
         
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, username, password);
-        Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery(query);
+        PreparedStatement st = con.prepareStatement(query);
+        st.setInt(1, rollNumber);
+        st.setString(2, studentName);
+        int rowsAffected = st.executeUpdate(); // when using prepared statement, we don't need to pass the query to the executeUpdate() method
         
-        while(rs.next()){
-            System.out.println(rs.getInt(1) + " : " + rs.getString(2));
-        }
-        
-        System.out.println("Connection Established");
+      // Statement st = con.createStatement();
+      //  ResultSet rs = st.executeQuery(query); // executeQuery() is used when fetching data from database
+      //  int rowsAffected = st.executeUpdate(query); // executeUpdate() is used when inserting values into database
+       
+        System.out.println(rowsAffected + "row(s) affected");
         
     }
     
