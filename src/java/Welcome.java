@@ -15,19 +15,18 @@ public class Welcome extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        ValidateLogin login = new ValidateLogin();
             
         try {
-            String username = request.getParameter("username");
-            String password = request.getParameter("password");
-            ValidateLogin login = new ValidateLogin();
-            
             if(login.validateLogin(username, password)){
                 HttpSession session = request.getSession();
                 session.setAttribute("username", username);
                 response.sendRedirect("About.jsp");
             } else response.sendRedirect("Login.jsp");
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Welcome.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException | SQLException ex) {
+            System.out.println(ex);
         }
     }
 
