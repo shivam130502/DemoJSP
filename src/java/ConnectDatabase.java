@@ -26,5 +26,4 @@ public class ConnectDatabase {
         System.out.println(rowsAffected + "row(s) affected");
         
     }
-    
 }

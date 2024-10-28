@@ -5,6 +5,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import com.login.ValidateLogin;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Welcome extends HttpServlet {
  
@@ -12,36 +15,20 @@ public class Welcome extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String url = "jdbc:mysql://localhost:3306/jdbc";
-        String username = "admin";
-        String password = "admin";
-        String query = "select * from student ";
-        
-//        try {
-//            Class.forName("com.mysql.jdbc.Driver");
-//            Connection con = DriverManager.getConnection(url, username, password);
-//            Statement st = con.createStatement();
-//            ResultSet rs = st.executeQuery(query);
-//            
-//            rs.next();
-//            
-//            String name = rs.getString("studentName");
-//            System.out.println(name);
-//            
-//            rs.close();
-//            con.close();
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        }
-        
-//        String username = request.getParameter("username");
-//        String password = request.getParameter("password");
-        
-        if(username.equals("shivam") && password.equals("dhir")){
-            HttpSession session = request.getSession();
-            session.setAttribute("username", username);
-            response.sendRedirect("About.jsp");
-        } else response.sendRedirect("Login.jsp");
+            
+        try {
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            ValidateLogin login = new ValidateLogin();
+            
+            if(login.validateLogin(username, password)){
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+                response.sendRedirect("About.jsp");
+            } else response.sendRedirect("Login.jsp");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Welcome.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }
