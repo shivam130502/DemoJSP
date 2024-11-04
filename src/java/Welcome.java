@@ -6,12 +6,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import com.login.ValidateLogin;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-public class Welcome extends HttpServlet {
- 
-    @Override
+public class Welcome extends HttpServlet { 
+    
+    @Override 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
@@ -29,5 +27,4 @@ public class Welcome extends HttpServlet {
             System.out.println(ex);
         }
     }
-
 }

@@ -9,7 +9,11 @@
     </filter>
     <filter-mapping>
         <filter-name>loginFilter</filter-name>
+<<<<<<< HEAD
         <servlet-name>Welcome</servlet-name>
+=======
+        <url-pattern>/*</url-pattern>
+>>>>>>> 0d1f6645f09c999fd1c2b54fbbb3ec4ddc6b0110
     </filter-mapping>
     <servlet>
         <servlet-name>NewServlet</servlet-name>
