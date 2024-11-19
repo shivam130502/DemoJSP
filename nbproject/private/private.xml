@@ -3,24 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/src/java/Welcome.java</file>
             <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/src/java/com/login/ValidateLogin.java</file>
             <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/web/Login.jsp</file>
             <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/src/java/loginFilter.java</file>
+            <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/nbproject/build-impl.xml</file>
             <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/src/java/Logout.java</file>
             <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/web/Hello.jsp</file>
-=======
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/web/Login.jsp</file>
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/src/java/Welcome.java</file>
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/web/About.jsp</file>
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/src/java/ConnectDatabase.java</file>
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/src/java/com/login/ValidateLogin.java</file>
-            <file>file:/C:/Users/shiva/Documents/NetBeansProjects/DemoJSP/src/java/DAO.java</file>
->>>>>>> 0d1f6645f09c999fd1c2b54fbbb3ec4ddc6b0110
+            <file>file:/C:/Users/Shivam/Documents/NetbeansProjects/DemoJSP/src/java/testFilter.java</file>
         </group>
     </open-files>
 </project-private>

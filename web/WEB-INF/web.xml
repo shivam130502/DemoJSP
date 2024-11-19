@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
-    <welcome-file-list>
-        <welcome-file>Login.jsp</welcome-file>
-    </welcome-file-list>
     <filter>
-        <filter-name>loginFilter</filter-name>
-        <filter-class>loginFilter</filter-class>
+        <filter-name>testFilter</filter-name>
+        <filter-class>testFilter</filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>loginFilter</filter-name>
-<<<<<<< HEAD
-        <servlet-name>Welcome</servlet-name>
-=======
-        <url-pattern>/*</url-pattern>
->>>>>>> 0d1f6645f09c999fd1c2b54fbbb3ec4ddc6b0110
+        <filter-name>testFilter</filter-name>
+        <url-pattern>/Welcome</url-pattern>
     </filter-mapping>
     <servlet>
         <servlet-name>NewServlet</servlet-name>
@@ -40,8 +33,9 @@
         <url-pattern>/Logout</url-pattern>
     </servlet-mapping>
     <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
+        <session-timeout>30</session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>Login.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>
