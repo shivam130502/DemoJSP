@@ -16,6 +16,7 @@ public class testFilter implements Filter {
             throws IOException, ServletException {
         
         System.out.println("Inside filter");
+        System.out.println("Configuring Filter");
         chain.doFilter(request, response);
         
     }
